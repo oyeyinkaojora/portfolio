@@ -1,10 +1,17 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
+import { motion } from "framer-motion";
+
 function Projects() {
   return (
-    <div className="container mx-auto">
+    <motion.div
+      className="container p-16 mx-auto"
+      initial={{ y: "100vh" }}
+      animate={{ y: 0 }}
+      transition={{ delay:1,  }}
+    >
       <h1 className="text-2xl text-white text-center">PROJECTS</h1>
       <div className="mt-12">
-        <div className="py-52  bg-white"></div>
+        <div className="py-52 bg-white"></div>
       </div>
 
       <div className="mt-4">
@@ -30,7 +37,7 @@ function Projects() {
           <div className="rounded-none bg-white px-3 ">REACT</div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
