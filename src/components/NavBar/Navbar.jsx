@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
+import cv from "../../assets/cv/resume.pdf";
 
 const Navbar = () => {
   const [open, setOpen] = useState(true);
@@ -22,12 +23,13 @@ const Navbar = () => {
             <a className="hover:text-lightRed" href="#about">
               About Me
             </a>
-            <a className="hover:text-lightRed" href="#contact">
+            <a className="hover:text-lightRed" href="#contact" d>
               Contact
             </a>
             <a
               className="text-white px-8 outline outline-offset-2 outline-white hover:outline-lightRed"
-              href="http://"
+              href={cv}
+              download="ojora-oyeyinka"
             >
               CV
             </a>
@@ -60,7 +62,8 @@ const Navbar = () => {
           </a>
           <a
             className="text-white px-8 outline outline-offset-2 outline-white hover:outline-lightRed"
-            href="http://"
+            href={cv}
+            download="ojora-oyeyinka"
           >
             CV
           </a>
