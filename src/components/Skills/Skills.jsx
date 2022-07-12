@@ -2,7 +2,7 @@ import React from "react";
 
 function Skills() {
   return (
-    <div className="container mt-12 space-y-12 mx-auto md:p-11">
+    <div id="skills" className="container mt-12 space-y-12 mx-auto md:p-11">
       <h1 className="text-white text-center text-3xl">SKILLS</h1>
       <div className="flex justify-center space-x-3 mx-auto md:space-x-12 ">
         <i className="devicon-javascript-plain colored dev"></i>

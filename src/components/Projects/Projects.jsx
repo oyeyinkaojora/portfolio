@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 function Projects() {
   return (
     <motion.div
+     id="projects"
       className="container p-16 mx-auto"
       initial={{ y: "100vh" }}
       animate={{ y: 0 }}

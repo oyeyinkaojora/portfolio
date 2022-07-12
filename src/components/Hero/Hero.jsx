@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-// eslint-disable-next-line no-unused-vars
 import styles from "./Hero.module.scss";
 import linkedin from "../../assets/svg/white-linkedin.svg";
 import github from "../../assets/svg/white-github.svg";
@@ -9,7 +7,7 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     <motion.div
-      className="mx-auto mt-5 container p-11   text-white"
+      className="mx-auto mt-24 container p-11   text-white"
       initial={{ y: "-100vh" }}
       animate={{ y: 0 }}
       transition={{ delay: 0.1 }}
@@ -22,33 +20,53 @@ function Hero() {
           I'm a <span className={styles.nameColor}>Frontend Developer</span>
         </p>
         <div className="flex cursor-pointer">
-          <motion.img
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
-            src={linkedin}
-            width="50"
-            className="hover:bg-lightRed"
-            height="50"
-            alt="linkedin"
-          />
-          <motion.img
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
-            src={github}
-            className="hover:bg-lightRed"
-            width="50"
-            height="50"
-            alt="linkedin"
-          />
-          <motion.img
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
-            src={twitter}
-            className="hover:bg-lightRed"
-            width="50"
-            height="50"
-            alt="linkedin"
-          />
+          <a
+            href="https://www.linkedin.com/in/ojora-oyeyinka-olamide-5b8568169"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.img
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
+              src={linkedin}
+              width="50"
+              className="hover:bg-lightRed"
+              height="50"
+              alt="linkedin"
+            />
+          </a>
+
+          <a
+            href="https://github.com/oyeyinkaojora"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.img
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
+              src={github}
+              className="hover:bg-lightRed"
+              width="50"
+              height="50"
+              alt="Github"
+            />
+          </a>
+
+          <a
+            href="https://twitter.com/oyeyinkaojora"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.img
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
+              src={twitter}
+              className="hover:bg-lightRed"
+              width="50"
+              height="50"
+              alt="twitter"
+            />
+          </a>
         </div>
         <div>
           <motion.button
