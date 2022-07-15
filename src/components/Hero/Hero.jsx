@@ -3,6 +3,7 @@ import linkedin from "../../assets/svg/white-linkedin.svg";
 import github from "../../assets/svg/white-github.svg";
 import twitter from "../../assets/svg/twitter.svg";
 import { motion } from "framer-motion";
+import cv from "../../assets/cv/resume.pdf";
 
 function Hero() {
   return (
@@ -74,7 +75,9 @@ function Hero() {
             whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
             className={`${styles.projects} rounded-none px-5 py-4`}
           >
-            View Projects
+            <a href={cv} download="ojora-oyeyinka">
+              My Resume
+            </a>
           </motion.button>
         </div>
       </div>
