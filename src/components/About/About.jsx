@@ -10,7 +10,7 @@ function About() {
       className="container text-white space-y-5 mx-auto mt-40 w-2/3 md:p-11 "
     >
       <h1 className="text-3xl  text-center">ABOUT ME</h1>
-      <p className="text-center">
+      <p className="text-justify">
         I’m a Front End Developer(Reactjs) with 8 months of Industrial
         Experience, I enjoy developing friendly UI and also the integration of
         the backend API,I keep learning every day in other to up my skills, and
