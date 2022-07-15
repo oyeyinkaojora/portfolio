@@ -1,22 +1,11 @@
-import { useFormik } from "formik";
 import styles from "../Hero/Hero.module.scss";
 
 function ContactMeForm() {
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      subject: "",
-      message: "",
-      email: "",
-    },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
   return (
     <form
       className="flex flex-col space-y-5 md:w-2/3 p-6 mx-auto"
-      onSubmit={formik.handleSubmit}
+      action="https://formsubmit.co/oyeyinkaojoro@gmail.com"
+      method="post"
     >
       <input
         id="name"
@@ -24,8 +13,7 @@ function ContactMeForm() {
         type="text"
         placeholder="Name"
         className="input py-4 p-2 rounded-md "
-        onChange={formik.handleChange}
-        value={formik.values.name}
+        required
       />
 
       <input
@@ -34,8 +22,7 @@ function ContactMeForm() {
         type="email"
         placeholder="email"
         className="input py-4 p-2 rounded-md "
-        onChange={formik.handleChange}
-        value={formik.values.email}
+        required
       />
 
       <input
@@ -44,8 +31,7 @@ function ContactMeForm() {
         type="text"
         placeholder="subject"
         className="input py-4 p-2 rounded-md "
-        onChange={formik.handleChange}
-        value={formik.values.subject}
+        required
       />
 
       <textarea
@@ -54,8 +40,7 @@ function ContactMeForm() {
         className="rounded-md p-2"
         placeholder="message"
         rows="6"
-        onChange={formik.handleChange}
-        value={formik.values.message}
+        required
       />
 
       <div>
